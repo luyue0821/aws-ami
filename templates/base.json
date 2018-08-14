@@ -74,12 +74,16 @@
     "script": "provisioners/shell/cfn-helper-scripts.sh"
   },{
     "type": "shell",
+    "script": "provisioners/shell/boto.sh"
+  },{
+    "type": "shell",
     "inline": [
       "echo 'Validating provisioners...'",
       "aws --version",
       "git --version",
       "java -version",
       "salt-minion --version",
+      "pip show boto",
       "echo 'Remove ssh key to make the AMI more secure.'",
       "rm -vf ~/.ssh/authorized_keys"
     ]
