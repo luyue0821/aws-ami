@@ -39,8 +39,8 @@
     ]
   }, {
     "type": "file",
-    "source": "conf/pip",
-    "destination": "~/.pip"
+    "source": "conf/pip/pip.conf",
+    "destination": "~/.pip/pip.conf"
   }, {
     "type": "shell",
     "script": "provisioners/shell/packages.sh"
